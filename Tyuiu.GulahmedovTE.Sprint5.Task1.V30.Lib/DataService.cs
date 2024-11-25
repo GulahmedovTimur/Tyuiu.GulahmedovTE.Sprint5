@@ -39,6 +39,7 @@ namespace Tyuiu.GulahmedovTE.Sprint5.Task1.V30.Lib
                     File.AppendAllText(path, strY);
                 }
             }
+
             return path;
         }
     }

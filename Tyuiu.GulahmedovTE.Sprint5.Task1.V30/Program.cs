@@ -6,7 +6,6 @@ namespace Tyuiu.GulahmedovTE.Sprint5.Task1.V30
         static void Main(string[] args)
         {
             DataService ds = new DataService();
-
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        *");
             Console.WriteLine("***************************************************************************");
