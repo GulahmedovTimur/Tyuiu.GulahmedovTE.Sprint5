@@ -1,5 +1,5 @@
-﻿using Tyuiu.GulahmedovTE.Sprint5.Lib;
-namespace Tyuiu.GulahmedovTE.Sprint5
+﻿using Tyuiu.GulahmedovTE.Sprint5.Task0.V26.Lib;
+namespace Tyuiu.GulahmedovTE.Sprint5.Task0.V26
 {
     internal class Program
     {
