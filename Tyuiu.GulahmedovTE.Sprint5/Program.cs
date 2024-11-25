@@ -5,6 +5,9 @@ namespace Tyuiu.GulahmedovTE.Sprint5
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("***************************************************************************");
+            Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        *");
+            Console.WriteLine("***************************************************************************");
             DataService ds = new DataService();
 
             int x = 2;
