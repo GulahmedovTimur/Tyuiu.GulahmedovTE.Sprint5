@@ -8,13 +8,11 @@ namespace Tyuiu.GulahmedovTE.Sprint5.Task1.V30.Lib
             string path = $@"{Directory.GetCurrentDirectory()}\OutPutFileTask1.txt";
             FileInfo fileInfo = new FileInfo(path);
             bool fileExists = fileInfo.Exists;
-
             if (fileExists)
             {
                 File.Delete(path);
             }
 
-            double y;
             string strY;
 
             for (int x = startValue; x <= stopValue; x++)
@@ -31,14 +29,12 @@ namespace Tyuiu.GulahmedovTE.Sprint5.Task1.V30.Lib
                 if (x != stopValue)
                 {
                     File.AppendAllText(path, strY + Environment.NewLine);
-
                 }
                 else
                 {
                     File.AppendAllText(path, strY);
                 }
             }
-
             return path;
         }
     }
