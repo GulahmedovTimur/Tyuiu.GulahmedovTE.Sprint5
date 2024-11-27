@@ -16,7 +16,6 @@ namespace Tyuiu.GulahmedovTE.Sprint5.Task4.V17
             Console.WriteLine("*************************************************************************************");
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                                        *");
             Console.WriteLine("*************************************************************************************");
-
             double res = ds.LoadFromDataFile(path);
             Console.WriteLine(res);
             Console.ReadKey();
