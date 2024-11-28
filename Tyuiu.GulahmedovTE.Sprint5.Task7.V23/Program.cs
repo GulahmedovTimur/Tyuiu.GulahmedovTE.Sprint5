@@ -10,7 +10,6 @@ namespace Tyuiu.GulahmedovTE.Sprint5.Task7.V23
             Console.WriteLine("* Исходные данные:                                                        *");
             Console.WriteLine("***************************************************************************");
 
-
             string path = $@"C:\Users\gytim\source\repos\Tyuiu.GulahmedovTE.Sprint5\Tyuiu.GulahmedovTE.Sprint5.Task7.V23\bin\Debug\net8.0\InPutDataFileTask7V23.txt";
             string pathSaveFile = $@"C:\Users\gytim\source\repos\Tyuiu.GulahmedovTE.Sprint5\Tyuiu.GulahmedovTE.Sprint5.Task7.V23\bin\Debug\net8.0\OutPutDataFileTask7V23.txt";
 
