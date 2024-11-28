@@ -1,24 +1,27 @@
 ﻿using Tyuiu.GulahmedovTE.Sprint5.Task1.V30.Lib;
-namespace Tyuiu.GulahmedovTE.Sprint5.Task1.V30;
-
-class Program
+namespace Tyuiu.GulahmedovTE.Sprint5.Task1.V30
 {
-    static void Main(string[] args)
+    internal class Program
     {
-        DataService ds = new DataService();
-        Console.WriteLine("***************************************************************************");
-        Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        *");
-        Console.WriteLine("***************************************************************************");
-        int startValue = -5;
-        int stopValue = 5;
-        Console.WriteLine("startValue = " + startValue);
-        Console.WriteLine("stopValue = " + stopValue);
+        static void Main(string[] args)
+        {
+            var ds = new DataService();
+            Console.WriteLine("***************************************************************************");
+            Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        *");
+            Console.WriteLine("***************************************************************************");
 
-        Console.WriteLine("***************************************************************************");
-        Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
-        Console.WriteLine("***************************************************************************");
-        Console.WriteLine("Файл: " + ds.SaveToFileTextData(startValue, stopValue));
-        Console.WriteLine("Создан! ");
-        Console.ReadKey();
+            Console.WriteLine("Введите начало и конец табуляции функции");
+            int start = Convert.ToInt32(Console.ReadLine());
+            int end = Convert.ToInt32(Console.ReadLine());
+
+            ds.SaveToFileTextData(start, end);
+
+            Console.WriteLine("***************************************************************************");
+            Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
+            Console.WriteLine("***************************************************************************");
+            string path = Path.Combine(new string[] { Path.GetTempPath(), "OutPutFileTask1.txt" });
+            string text = File.ReadAllText(path);
+            Console.WriteLine(text);
+        }
     }
 }
