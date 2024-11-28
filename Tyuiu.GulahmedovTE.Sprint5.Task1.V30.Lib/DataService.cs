@@ -1,5 +1,4 @@
 ﻿using tyuiu.cources.programming.interfaces.Sprint5;
-namespace Tyuiu.GulahmedovTE.Sprint5.Task1.V30.Lib
 {
     public class DataService : ISprint5Task1V30
     {
