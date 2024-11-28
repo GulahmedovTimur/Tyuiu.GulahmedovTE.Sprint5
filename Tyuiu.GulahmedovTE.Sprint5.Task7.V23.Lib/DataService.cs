@@ -28,6 +28,7 @@ namespace Tyuiu.GulahmedovTE.Sprint5.Task7.V23.Lib
                     }
                     strLine = ", World! This.";
 
+
                     File.AppendAllText(pathSaveFile, strLine + Environment.NewLine);
                     strLine = "";
                 }
